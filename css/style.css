@@ -1,61 +1,146 @@
-body{
+body {
   background-color: rgb(196, 195, 195);
 }
-.head{ 
+
+.head {
   height: 63px;
   width: 100%;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(216, 215, 215);
   position: relative;
 }
-.image{
+
+.image {
   margin-left: 150px;
   margin-top: 7px;
   display: inline;
   position: absolute;
 }
-.navigation{
+
+.navigation {
   height: 63px;
   width: 100%;
   display: inline-flex;
   margin-top: 30px;
   margin-left: 300px;
   justify-content: left;
-  position: absolute;  
+  position: absolute;
 }
-.search{
+
+.search {
   align-items: top;
   display: inline-flex;
 }
-.login{
+
+.login {
   white-space: pre;
   display: inline-flex;
   justify-content: right;
   flex-grow: 0.63;
 }
-.content{
+
+.content {
   background-color: rgb(255, 255, 255);
   height: 93.5%;
   width: 84%;
   margin: auto
 }
-.content__links{
+
+.content__links {
   display: inline-flex;
 }
-.content__union{
+
+.content__union {
   margin-top: 30px;
   margin-left: 50px;
   display: flex;
 }
-.content__items{
+
+.content__items {
   display: flex;
   justify-content: space-evenly;
-  
+
 }
-a{
+
+a {
   margin-left: 15px;
 }
-li{
+
+li {
   margin-left: 40px;
   color: blue;
+}
+
+
+/* ..........grid.......... */
+
+.wrapper {
+  padding: 50px;
+  height: 600px;
+}
+
+.container {
+  max-width: 1340px;
+  max-height: 600px;
+  margin: 0 auto;
+}
+
+.item {
+  border: 5px dashed #444;
+  font-size: 40px;
+  padding: .8em;
+  text-align: center;
+}
+
+.grid-1 {
+  display: grid;
+  gap: 30px;
+  grid-template:
+    "transport helth helth"400px"transport helth helth "100px "transport footer1 footer2"200px / 320px 320px 320px .3fr;
+}
+
+.grid-1__item--transport {
+  grid-area: transport;
+}
+
+.grid-1__item--helth {
+  grid-area: helth;
+}
+
+.grid-1__item--footer1 {
+  grid-area: footer1;
+}
+
+.grid-1__item--footer2 {
+  grid-area: footer2;
+}
+
+.grid-1__1 {
+  display: grid;
+  gap: 30px;
+  grid-template:
+    "study"243px "new "243px "mos"215px / 300px;
+}
+
+.grid-1__item--study {
+  grid-area: study;
+}
+
+.grid-1__item--new {
+  grid-area: new;
+}
+
+.grid-1__item--mos {
+  grid-area: mos;
+}
+
+.grid-1__item {
+  position: relative;
+  overflow: none
+}
+
+.grid-1__item img {
+  position: absolute;
+  width: 320px;
+  height: 760px;
 }
