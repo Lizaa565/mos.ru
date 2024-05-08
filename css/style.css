@@ -86,10 +86,7 @@ li {
 }
 
 .item {
-  border: 5px dashed #444;
   font-size: 40px;
-  padding: .8em;
-  text-align: center;
 }
 
 .grid-1 {
@@ -134,13 +131,91 @@ li {
   grid-area: mos;
 }
 
-.grid-1__item {
-  position: relative;
-  overflow: none
+.example_image {
+  width: 360px;
+  margin-top: 403px;
 }
 
-.grid-1__item img {
-  position: absolute;
+.gradient {
+  display: block;
+  overflow: hidden;
   width: 320px;
-  height: 760px;
+  height: 600px;
+  position: absolute;
+  top: 155px;
+  left: 262px;
+  background: transparent;
+  background-image: linear-gradient(#f2e8c9 75%, #f2e8c9e7, #f2e8c900);
+  z-index: 1;
+}
+
+.grid__anim {
+  overflow: hidden;
+}
+
+.grid__anim img {
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+}
+
+.grid__anim img:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.example_image::before {
+  width: 200px;
+  height: 200px;
+  background-color: #333;
+}
+
+.example_image1 {
+  height: 600px;
+}
+
+.gradient_1 {
+  display: block;
+  overflow: hidden;
+  width: 670px;
+  height: 350px;
+  position: absolute;
+  top: 340px;
+  left: 612px;
+  background: transparent;
+  background-image: linear-gradient(to top, #000000 30%, #00000000);
+  z-index: 1;
+}
+.grid-1__item{
+  overflow: hidden;
+}
+.example_image3 {
+  height: 250px;
+}
+.date_name{
+  font-size: 14px;
+  align: left;
+  color: rgb(65, 134, 76);
+}
+h2{
+  margin-top: 10px;
+  font-size: 25px;
+  z-index: 3;
+}
+time{
+  color: brown;
+  padding-right: 20px;
+}
+.text_osn{
+  margin-left: 30px;
+  margin-top: 200px;
+  color: #f2e8c9;
+}
+.text_osn2{
+  color: #333;
+  padding-left: 15px;
+  padding-top: 50px;
+  font-size: 26px;
+  line-height:35px
 }

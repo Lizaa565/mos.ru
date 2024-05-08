@@ -1,0 +1,14 @@
+window.chatCfg = [
+  {
+    path: '/**',
+    newchat: 'true',
+    group: 'https://chat.mos.ru/client/scripts/script.js?yaCounter=32628510',
+    exclude: ['/', '/en/**', '/cn/**', '/moi-raion/**', '/map/**', '/new-map/**', '/covid-19/**', '/city/projects/covid-19/**', '/depr/function/tarif/**', '/privacypolicy/socmon/', '/progulka/', '/pgu/ru/app/cikrf/konstituciya/**', '/404/testchat/404/**'],
+  },
+  {
+    path: '/404/testchat/404/**',
+    newchat: 'true',
+    group: 'https://mos.ditokc.ru/chat/widgetloader/writer.js',
+    exclude: ['/', '/en/**', '/cn/**', '/moi-raion/**', '/map/**', '/new-map/**', '/covid-19/**', '/city/projects/covid-19/**', '/depr/function/tarif/**', '/privacypolicy/socmon/', '/progulka/', '/pgu/ru/app/cikrf/konstituciya/**'],
+  }
+];
